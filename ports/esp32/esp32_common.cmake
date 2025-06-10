@@ -148,6 +148,7 @@ list(APPEND MICROPY_SOURCE_PORT
     machine_rtc.c
     machine_sdcard.c
     modespnow.c
+    modespeapclient.c
 )
 list(TRANSFORM MICROPY_SOURCE_PORT PREPEND ${MICROPY_PORT_DIR}/)
 list(APPEND MICROPY_SOURCE_PORT ${CMAKE_BINARY_DIR}/pins.c)
@@ -197,6 +198,7 @@ list(APPEND IDF_COMPONENTS
     ulp
     usb
     vfs
+    wpa_supplicant
 )
 
 # Provide the default LD fragment if not set
